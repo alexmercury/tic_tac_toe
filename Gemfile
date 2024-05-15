@@ -2,9 +2,9 @@
 
 source 'https://rubygems.org'
 
-ruby '2.5.1'
+ruby '3.3.1'
 
-gem 'concolor'
+gem 'concolor', '= 0.0.1'
 
 group :test do
   gem 'rspec'

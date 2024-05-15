@@ -1,0 +1,26 @@
+{
+  "name": "tic_tac_toe",
+  "image": "tic_tac_toe:latest",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "runArgs": [
+    "--name=tic_tac_toe",
+    "--tty"
+  ],
+  "shutdownAction": "stopContainer",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.rulers": [ 80, 100, 120 ]
+      },
+      "extensions": [
+        "castwide.solargraph",
+        "Shopify.ruby-lsp",
+        "misogi.ruby-rubocop",
+        "mhutchie.git-graph"
+      ]
+    }
+  }
+}
